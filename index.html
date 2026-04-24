@@ -128,8 +128,13 @@
     let numberc = 0;
     startbtn.addEventListener("click", () => {
       if (s = false) {
-        a = true;
+        s = true;
+        b = 0;
+        numbera = 0;
+        numberb = 0;
+        numberc = 0;
       }else {
+        
       }
     });
     
@@ -139,11 +144,30 @@
 
     function loop(time) {
       if(time - lastTime >= interval) {
-        if (a == true) {
+        if (s == true) {
           startbtn.textContent = "stop";
-          numbera++;
-          numberb++;
-          numberc++;
+          if (b < 1) {
+            if (numbera == 9) {
+              numbera = 0;
+            }else {
+              numbera++;
+            }
+          }
+          if (b < 2) {
+            if (numberb == 9) {
+              numberb = 0;
+            }else {
+              numberb++;
+            }
+          }
+          if (b < 3) {
+            if (numberc == 9) {
+              numberc = 0;
+            }else {
+              numberc++;
+            }
+          }
+          slot.textContent = "- " + numbera + " - " + numberb + " - " + numberc + " -";
         }
         lastTime = time;
       }
