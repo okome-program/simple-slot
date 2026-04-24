@@ -135,6 +135,8 @@
         numberc = 0;
       }else if (b < 4) {
         b++;
+      }else if(b == 4) {
+        s = false;
       }
     });
     
@@ -166,6 +168,9 @@
             }else {
               numberc++;
             }
+          }
+          if (b == 4) {
+            startbtn.textContent = "reset";
           }
           slot.textContent = "- " + numbera + " - " + numberb + " - " + numberc + " -";
         }
