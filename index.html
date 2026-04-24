@@ -34,13 +34,36 @@
         user-select: none;
         -webkit-user-select: none;
       }
+
+      .wrapper {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .virtual {
+        position: relative;
+        width: calc(100vh * 9 / 16);
+        height: 100vh;
+        overflow: hidden;
+        background: #0000ff;
+      }
       
     </style>
   </head>
   <body>
     <div id="game">
-      <h1 id="gametitle">シンプルスロット</h1>
-      <button id="startbtn"></button>
+      <div class="wrapper">
+        <div class="virtual">
+          <h1 id="gametitle">シンプルスロット</h1>
+          <button id="startbtn"></button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+
+
