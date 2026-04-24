@@ -64,7 +64,13 @@
         top: 30%;
         left: 50%;
         color: rgb(242, 169, 132);
-        border: 1% solid #000;
+        transform: translate(-50%, -50%);
+      }
+      #slotborder {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        background-color: #000;
         transform: translate(-50%, -50%);
       }
 
@@ -84,6 +90,7 @@
         <div class="virtual">
           <h1 id="gametitle">シンプルスロット</h1>
           <div id="slot">- 1 - 2 - 3 -</div>
+          <div id="slotborder"></div>
           <button id="startbtn">スタート！</button>
           <button id="stopbtn">ストップ</button>
         </div>
