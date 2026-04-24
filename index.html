@@ -118,8 +118,18 @@
   </body>
   <script>
     const startbtn = document.getElementById("startbtn");
-    startbtn.textContent = "stop";
+    const slot = document.getElementById("slot");
+
+    const FPS = 20;
+    const interval = 1000 / FPS;
+    let lastTime = 0;
+
+    function loop(time) {
+      if(time - lastTime >= interval) {
+        lastTime = time;
+      }
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
   </script>
 </html>
-
-
