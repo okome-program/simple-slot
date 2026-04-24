@@ -119,13 +119,32 @@
   <script>
     const startbtn = document.getElementById("startbtn");
     const slot = document.getElementById("slot");
-
+    
+    let a = false;
+    let b = 0;
+    let s = false;
+    let numbera = 0;
+    let numberb = 0;
+    let numberc = 0;
+    startbtn.addEventListener("click", () => {
+      if (s = false) {
+        a = true;
+      }else {
+      }
+    });
+    
     const FPS = 20;
     const interval = 1000 / FPS;
     let lastTime = 0;
 
     function loop(time) {
       if(time - lastTime >= interval) {
+        if (a == true) {
+          startbtn.textContent = "stop";
+          numbera++;
+          numberb++;
+          numberc++;
+        }
         lastTime = time;
       }
       requestAnimationFrame(loop);
