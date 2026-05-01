@@ -1,5 +1,8 @@
 // js/main.js
 
+const startbtn = document.getElementById("startbtn");
+const point = document.getElementById("point");
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -16,5 +19,5 @@ img.onload = () => {
 
 // draw function
 function atlas_draw() {
-  ctx.drawImage(img, 0, 0, 32, 32, 64, 64, 32, 32);
+  ctx.drawImage(img, 0, 0, 32, 32, 64, 128, 64, 64);
 }
