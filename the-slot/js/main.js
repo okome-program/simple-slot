@@ -44,6 +44,9 @@ function atlas_draw() {
 }
 
 function update() {
+  startbtn.addEventListener("click", () => {
+    
+  });
   
 }
 
