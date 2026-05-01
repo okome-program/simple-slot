@@ -71,6 +71,21 @@ body {
   color: #000000;
 }
 
+#point {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  width: 80%;
+  height: 7%;
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #000000;
+}
+
 #startbtn {
   position: absolute;
   left: 60%;
