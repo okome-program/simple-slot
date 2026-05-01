@@ -20,9 +20,10 @@ img.onload = () => {
 // draw function
 function atlas_draw() {
   ctx.fillStyle = "#ffffff";
-  ctx.fillRect(16, 112, 200, 96);
+  ctx.fillRect(16, 256, 200, 96);
   ctx.drawImage(img, 0, 0, 32, 32, 32, 128, 64, 64);
   ctx.drawImage(img, 0, 32, 32, 32, 112, 128, 64, 64);
+  ctx.drawImage(img, 0, 64, 32, 32, 192, 128, 64, 64);
 }
 
 const FPS = 20;
