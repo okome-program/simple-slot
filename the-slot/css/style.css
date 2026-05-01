@@ -56,3 +56,14 @@ body {
   align-items: center;
   background-color: #000000;
 }
+
+#gametitle {
+  position: absolute:
+  left: 50%;
+  top: 60%;
+  width: 15%;
+  height: 15%;
+  transform: translate(-50%, -50%);
+  background-color: #eeddff;
+  color: #000000;
+}
