@@ -24,12 +24,7 @@ let btn_p = 0;
 
 
 img.onload = () => {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "#ffffff";
-  ctx.fillRect(16, 112, 256, 96);
-  ctx.drawImage(img, 0, 0, 32, 32, 32, 128, 64, 64);
-  ctx.drawImage(img, 0, 32, 32, 32, 112, 128, 64, 64);
-  ctx.drawImage(img, 0, 64, 32, 32, 192, 128, 64, 64);
+  atlas_draw();
 };
 
 // draw function
@@ -56,7 +51,7 @@ startbtn.addEventListener("click", () => {
 
 function update() {
   if (btn_p < ) {
-    
+  }
 }
 
 const FPS = 20;
