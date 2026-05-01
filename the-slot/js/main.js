@@ -6,8 +6,11 @@ const ctx = canvas.getContext("2d");
 const img = new Image();
 img.src = "./assets/images/atlas.webp";
 
+let slot_at = 0;
+let slot_bt = 0;
+let slot_ct = 0;
+
 img.onload = () => {
-  console.log("loaded!");
   atlas_draw();
 };
 
