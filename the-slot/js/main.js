@@ -30,10 +30,10 @@ const interval = 1000 / FPS;
 let lastTime = 0;
 
 function loop(time) {
-  if() {
+  if(time - lastTime >= interval) {
     lastTime = time;
   }
   requestAnimationFrame(loop);
 }
-requestAnimasionFrame(loop);
+requestAnimationFrame(loop);
 
