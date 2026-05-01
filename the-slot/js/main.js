@@ -41,6 +41,7 @@ startbtn.addEventListener("click", () => {
   if (btn_p == 0) {
     if (player_point > 99) {
       player_point -= 100;
+      point.textContent = player_point + " point";
       btn_p = 1;
       startbtn.textContent = "stop";
     }
