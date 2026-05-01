@@ -63,6 +63,9 @@ body {
   top: 60%;
   width: 15%;
   height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translate(-50%, -50%);
   background-color: #eeddff;
   color: #000000;
