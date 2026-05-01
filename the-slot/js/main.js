@@ -7,8 +7,9 @@ const img = new Image();
 img.src = "../assets/images/atlas.webp";
 
 img.onload = () => {
+  console.log("loaded!");
   atlas_draw();
-} 
+};
 
 // draw function
 function atlas_draw() {
