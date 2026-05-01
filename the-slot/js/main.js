@@ -21,7 +21,6 @@ let slot_bp = 0;
 let slot_cp = 0;
 
 let btn_p = 0;
-let btn_s = 0;
 
 
 img.onload = () => {
@@ -43,11 +42,21 @@ function atlas_draw() {
   ctx.drawImage(img, 0, slot_cp, 32, 32, 192, 128, 64, 64);
 }
 
-function update() {
-  startbtn.addEventListener("click", () => {
-    
-  });
+startbtn.addEventListener("click", () => {
+  if (btn_p == 0) {
+    if (player_point > 99) {
+      player_point -= 100;
+      btn_p = 1;
+      startbtn.textContent = "stop";
+    }
+  }else if (btn_p == 1) {
+  }
   
+});
+
+function update() {
+  if (btn_p < ) {
+    
 }
 
 const FPS = 20;
