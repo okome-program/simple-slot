@@ -50,7 +50,7 @@ startbtn.addEventListener("click", () => {
 });
 
 function update() {
-  if (btn_p < ) {
+  if (btn_p < 0) {
   }
 }
 
