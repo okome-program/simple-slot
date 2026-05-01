@@ -13,5 +13,5 @@ img.onload = () => {
 
 // draw function
 function atlas_draw() {
-  ctx.drawImage(img, 0, 0, 32, 32, 0, 0, 32, 32);
+  ctx.drawImage(img, 0, 0, 32, 32, 64, 64, 32, 32);
 }
