@@ -19,6 +19,8 @@ img.onload = () => {
 
 // draw function
 function atlas_draw() {
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(16, 112, 200, 96);
   ctx.drawImage(img, 0, 0, 32, 32, 32, 128, 64, 64);
-  ctx.drawImage(img, 0, 32, 32, 32, 96, 128, 64, 64);
+  ctx.drawImage(img, 0, 32, 32, 32, 80, 128, 64, 64);
 }
