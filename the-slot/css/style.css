@@ -63,10 +63,29 @@ body {
   top: 5%;
   width: 80%;
   height: 10%;
-  font-size: 3vh;
+  font-size: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translate(-50%, -50%);
   color: #000000;
 }
+
+#startbtn {
+  position: absolute;
+  left: 60%;
+  top: 65%;
+  width: 20%;
+  height: 10%;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background-color: #eeeeff;
+  color: #000000;
+}
+
+
+
+
