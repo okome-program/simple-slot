@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  background: #bfdcf1;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game {
+  touch-action: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+#game * {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.virtual {
+  position: relative;
+  width: calc(100vh * 9 / 16);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
