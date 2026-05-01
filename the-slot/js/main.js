@@ -26,4 +26,14 @@ function atlas_draw() {
 }
 
 const FPS = 20;
-let interval = 1000 / FPS;
+const interval = 1000 / FPS;
+let lastTime = 0;
+
+function loop(time) {
+  if() {
+    lastTime = time;
+  }
+  requestAnimationFrame(loop);
+}
+requestAnimasionFrame(loop);
+
