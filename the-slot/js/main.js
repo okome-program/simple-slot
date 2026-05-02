@@ -10,7 +10,6 @@ const img = new Image();
 img.src = "./assets/images/atlas.webp";
 
 let player_point = 5000;
-let drawbool = false;
 
 let slot_at = 0;
 let slot_bt = 0;
@@ -51,7 +50,11 @@ startbtn.addEventListener("click", () => {
 });
 
 function update() {
-  if (btn_p < 0) {
+  if (2 > btn_p < 0) {
+    slot_ap += 16;
+    if (slot_ap > 223) {
+      slot_ap = 0;
+    }
   }
 }
 
@@ -61,6 +64,8 @@ let lastTime = 0;
 
 function loop(time) {
   if(time - lastTime >= interval) {
+    update();
+    atlas_draw();
     lastTime = time;
   }
   requestAnimationFrame(loop);
