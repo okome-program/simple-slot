@@ -48,6 +48,7 @@ startbtn.addEventListener("click", () => {
       startbtn.textContent = "stop";
     }
   }else if (btn_p == 1) {
+    slot_at--;
     btn_p = 2;
   }
   
