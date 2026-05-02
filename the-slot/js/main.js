@@ -49,6 +49,7 @@ startbtn.addEventListener("click", () => {
       slot_bt = 40;
       slot_ct = 50;
       point_bool = true;
+      player_point_p = 0;
       startbtn.textContent = "stop";
     }else if(player_point < 100) {
       player_point = 300;
@@ -121,13 +122,16 @@ function update() {
           if (slot_ap == slot_bp) {
             if (slot_bp == slot_cp) {
               if (point_bool == true) {
-                player_point_p += 1000;
+                player_point_p = 1000;
                 point_bool = false;
               }
             }
-            if (point_bool == true) player_point_p += 300;
-          }else if(slot_bp == slot_cp && point_bool == true) player_point_p += 300;
-            
+            if (point_bool == true) {
+              player_point_p = 300;
+            }
+          }else if(slot_bp == slot_cp && point_bool == true) {
+            player_point_p = 300;
+          }
             
           endbool = true;
         }
