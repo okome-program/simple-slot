@@ -50,6 +50,12 @@ startbtn.addEventListener("click", () => {
   }else if (btn_p == 1) {
     slot_at--;
     btn_p = 2;
+  }else if (btn_p == 2) {
+    slot_bt--;
+    btn_p = 3;
+  }else if (btn_p == 3) {
+    slot_ct--;
+    btn_p = 4;
   }
   
 });
@@ -66,12 +72,22 @@ function update() {
       slot_ap = 0;
     }
     
-    slot_bp += 16;
+    if (slot_bt == 40) {
+      slot_bp += 16;
+    }else if (slot_bt > 0 && slot_bt < 40) {
+      slot_bp += 8;
+      slot_bt--;
+    }
     if (slot_bp > 223) {
       slot_bp = 0;
     }
     
-    slot_cp += 16;
+    if (slot_ct == 60) {
+      slot_cp += 16;
+    }else if (slot_ct > 0 && slot_ct < 60) {
+      slot_cp += 8;
+      slot_ct--;
+    }
     if (slot_cp > 223) {
       slot_cp = 0;
     }
