@@ -10,6 +10,8 @@ const img = new Image();
 img.src = "./assets/images/atlas.webp";
 
 let player_point = 5000;
+let player_point_p = 0;
+let point_bool = false;
 
 let slot_at = 0;
 let slot_bt = 0;
@@ -46,6 +48,7 @@ startbtn.addEventListener("click", () => {
       slot_at = 40;
       slot_bt = 40;
       slot_ct = 50;
+      point_bool = true;
       startbtn.textContent = "stop";
     }else if(player_point < 100) {
       player_point = 300;
@@ -64,6 +67,7 @@ startbtn.addEventListener("click", () => {
     slot_bt = 0;
     slot_ct = 0;
     
+    startbtn.textContent = "+" + player_point_p;
     endbool = false;
     btn_p = 0;
   }
@@ -114,6 +118,17 @@ function update() {
     if (slot_at == 0 && slot_ap == slot_ap_math) {
       if (slot_bt == 0 && slot_bp == slot_bp_math) {
         if (slot_ct == 0 && slot_cp == slot_cp_math) {
+          if (slot_ap == slot_bp) {
+            if (slot_bp == slot_cp) {
+              if (point_bool == true) {
+                player_point_p += 1000;
+                point_bool = false;
+              }
+            }
+            if (point_bool == true) player_point_p += 300;
+          }else if(slot_bp == slot_cp && point_bool == true) player_point_p += 300;
+            
+            
           endbool = true;
         }
       }
