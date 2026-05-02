@@ -62,12 +62,15 @@ startbtn.addEventListener("click", () => {
 
 function update() {
   if (btn_p < 5 && btn_p > 0) {
+    const slot_ap_math = Math.floor(slot_ap / 32);
     if (slot_at == 40) {
       slot_ap += 16;
     }else if (slot_at > 0 && slot_at < 40) {
       slot_ap += 8;
       slot_at--;
- 		}
+ 		}else if (slot_at == 0 && slot_ap != slot_ap_math) {
+      slot_ap += 8;
+    }
     if (slot_ap > 223) {
       slot_ap = 0;
     }
