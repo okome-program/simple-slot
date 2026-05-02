@@ -36,7 +36,7 @@ function atlas_draw() {
   ctx.fillRect(16, 112, 256, 96);
   if (slot_ap > 200) {
   	ctx.drawImage(img, 0, slot_ap - (224 - slot_ap), 32, (224 - slot_ap), 32, 128, 64, (224 - slot_ap) * 2);
-    ctx.drawImage(img, 0, 32 - (224 - slot_ap), 32, 32 - (224 - slot_ap),32, 128 + (32 - (224 - slot_ap)), 64, (32 - (224 - slot_ap)) * 2);
+    ctx.drawImage(img, 0, 32 - (224 - slot_ap), 32, 32 - (224 - slot_ap),32, 128 + (32 - (224 - slot_ap)), 64, (224 - slot_ap) * 2);
   }else {
     ctx.drawImage(img, 0, slot_ap, 32, 32, 32, 128, 64, 64);
   }
