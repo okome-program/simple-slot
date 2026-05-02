@@ -68,7 +68,7 @@ startbtn.addEventListener("click", () => {
     slot_bt = 0;
     slot_ct = 0;
     
-    startbtn.textContent = "+" + player_point_p;
+    player_point += player_point_p;
     endbool = false;
     btn_p = 0;
   }
@@ -132,7 +132,8 @@ function update() {
           }else if(slot_bp == slot_cp && point_bool == true) {
             player_point_p = 300;
           }
-            
+          
+          startbtn.textContent = "+" + player_point_p;
           endbool = true;
         }
       }
