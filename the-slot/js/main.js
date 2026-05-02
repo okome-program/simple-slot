@@ -34,7 +34,9 @@ function atlas_draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "#ffffff";
   ctx.fillRect(16, 112, 256, 96);
-  ctx.drawImage(img, 0, slot_ap, 32, 32, 32, 128, 64, 64);
+  if (slot_ap > 192) {
+  	ctx.drawImage(img, 0, slot_ap - (224 - slot_ap), 32, 32, 32, 128, 64, slot_ap - (224 - slot_ap));
+  }
   ctx.drawImage(img, 0, slot_bp, 32, 32, 112, 128, 64, 64);
   ctx.drawImage(img, 0, slot_cp, 32, 32, 192, 128, 64, 64);
 }
