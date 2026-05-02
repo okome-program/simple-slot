@@ -56,6 +56,18 @@ function update() {
       slot_ap = 0;
     }
   }
+  if (btn_p < 3 && btn_p > 0) {
+    slot_bp += 16;
+    if (slot_bp > 223) {
+      slot_bp = 0;
+    }
+  }
+  if (btn_p < 4 && btn_p > 0) {
+    slot_cp += 16;
+    if (slot_cp > 223) {
+      slot_cp = 0;
+    }
+  }
 }
 
 const FPS = 20;
