@@ -75,11 +75,14 @@ function update() {
       slot_ap = 0;
     }
     
+    const slot_bp_math = Math.floor(slot_bp / 32) * 32;
     if (slot_bt == 40) {
       slot_bp += 16;
     }else if (slot_bt > 0 && slot_bt < 40) {
       slot_bp += 8;
       slot_bt--;
+    }else if (slot_bt == 0) && slot_bp != slot_bp_math) {
+    	slot_bp += 8;
     }
     if (slot_bp > 223) {
       slot_bp = 0;
