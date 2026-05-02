@@ -50,7 +50,7 @@ startbtn.addEventListener("click", () => {
 });
 
 function update() {
-  if (2 > btn_p < 0) {
+  if (btn_p < 2 && btn_p > 0) {
     slot_ap += 16;
     if (slot_ap > 223) {
       slot_ap = 0;
