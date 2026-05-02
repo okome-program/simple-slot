@@ -20,6 +20,7 @@ let slot_bp = 0;
 let slot_cp = 0;
 
 let btn_p = 0;
+let endbool = false;
 
 
 img.onload = () => {
@@ -44,7 +45,7 @@ startbtn.addEventListener("click", () => {
       btn_p = 1;
       slot_at = 40;
       slot_bt = 40;
-      slot_ct = 60;
+      slot_ct = 50;
       startbtn.textContent = "stop";
     }
   }else if (btn_p == 1) {
@@ -56,6 +57,8 @@ startbtn.addEventListener("click", () => {
   }else if (btn_p == 3) {
     slot_ct--;
     btn_p = 4;
+  }else if (btn_p == 4 && endbool == true) {
+    
   }
   
 });
@@ -89,7 +92,7 @@ function update() {
     }
     
     const slot_cp_math = Math.floor(slot_cp / 32) * 32;
-    if (slot_ct == 60) {
+    if (slot_ct == 50) {
       slot_cp += 16;
     }else if (slot_ct > 0 && slot_ct < 60) {
       slot_cp += 8;
@@ -99,6 +102,14 @@ function update() {
     }
     if (slot_cp > 223) {
       slot_cp = 0;
+    }
+    
+    if (slot_at == 0 && slot_ap == slot_ap_math) {
+      if (slot_bt == 0 && slot_bp == slot_bp_math) {
+        if (slot_ct == 0 && slot_cp == slot_cp_math) {
+          endbool = true;
+        }
+      }
     }
   }
 }
