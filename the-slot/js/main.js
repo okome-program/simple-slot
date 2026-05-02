@@ -42,16 +42,24 @@ startbtn.addEventListener("click", () => {
       player_point -= 100;
       point.textContent = player_point + " point";
       btn_p = 1;
+      slot_at = 40;
+      slot_bt = 40;
+      slot_ct = 60;
       startbtn.textContent = "stop";
     }
   }else if (btn_p == 1) {
+    btn_p = 2;
   }
   
 });
 
 function update() {
   if (btn_p < 2 && btn_p > 0) {
-    slot_ap += 16;
+    if (slot_at == 40) {
+      slot_ap += 16;
+    }else if (slot_at > 0 && slot_at < 40) {
+      slot_ap += 8;
+ 		}
     if (slot_ap > 223) {
       slot_ap = 0;
     }
