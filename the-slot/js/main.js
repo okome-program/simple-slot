@@ -47,6 +47,8 @@ startbtn.addEventListener("click", () => {
       slot_bt = 40;
       slot_ct = 50;
       startbtn.textContent = "stop";
+    }else if(player_point < 100) {
+      player_point = 300;
     }
   }else if (btn_p == 1) {
     slot_at--;
@@ -58,7 +60,12 @@ startbtn.addEventListener("click", () => {
     slot_ct--;
     btn_p = 4;
   }else if (btn_p == 4 && endbool == true) {
+    slot_at = 0;
+    slot_bt = 0;
+    slot_ct = 0;
     
+    endbool = false;
+    btn_p = 0;
   }
   
 });
