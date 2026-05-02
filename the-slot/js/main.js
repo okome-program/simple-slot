@@ -68,6 +68,7 @@ startbtn.addEventListener("click", () => {
     slot_bt = 0;
     slot_ct = 0;
     
+    startbtn.textContent = "start";
     player_point += player_point_p;
     endbool = false;
     btn_p = 0;
