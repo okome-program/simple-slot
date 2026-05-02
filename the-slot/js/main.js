@@ -54,23 +54,22 @@ startbtn.addEventListener("click", () => {
 });
 
 function update() {
-  if (btn_p < 2 && btn_p > 0) {
+  if (btn_p < 4 && btn_p > 0) {
     if (slot_at == 40) {
       slot_ap += 16;
     }else if (slot_at > 0 && slot_at < 40) {
       slot_ap += 8;
+      slot_at--;
  		}
     if (slot_ap > 223) {
       slot_ap = 0;
     }
-  }
-  if (btn_p < 3 && btn_p > 0) {
+    
     slot_bp += 16;
     if (slot_bp > 223) {
       slot_bp = 0;
     }
-  }
-  if (btn_p < 4 && btn_p > 0) {
+    
     slot_cp += 16;
     if (slot_cp > 223) {
       slot_cp = 0;
