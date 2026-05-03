@@ -100,10 +100,10 @@ function update() {
     if (slot_at == 40) {
       slot_ap += 16;
 		}else if (slot_at > 0 && slot_at < 40) {
-      slot_ap += 8;
+      slot_ap += 4;
       slot_at--;
 		}else if (slot_at == 0 && slot_ap != slot_ap_math) {
-      slot_ap += 8;
+      slot_ap += 4;
 		}
 		if (slot_ap > 223) {
       slot_ap = 0;
