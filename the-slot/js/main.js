@@ -43,6 +43,7 @@ function atlas_draw() {
   
   if (slot_bp > 192 ) {
     ctx.drawImage(img, 0, slot_bp, 32, 224 - slot_bp, 112, 128, 64, 2 * (224 - slot_bp));
+    ctx.drawImage(img, 0, 0, 32, 32 - (224 - slot_bp), 112, 128 + (2 * (224 - slot_bp)), 64, 2 * (32 - (224 - slot_bp)));
   }else {
     ctx.drawImage(img, 0, slot_bp, 32, 32, 112, 128, 64, 64);
   }
