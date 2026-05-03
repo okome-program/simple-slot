@@ -40,7 +40,12 @@ function atlas_draw() {
   }else {
     ctx.drawImage(img, 0, slot_ap, 32, 32, 32, 128, 64, 64);
   }
-  ctx.drawImage(img, 0, slot_bp, 32, 32, 112, 128, 64, 64);
+  
+  if (slot_bp > 192 ) {
+    ctx.drawImage(img, 0, slot_bp, 32, 224 - slot_bp, 112, 128, 64, 2 * (224 - slot_bp));
+  }else {
+    ctx.drawImage(img, 0, slot_bp, 32, 32, 112, 128, 64, 64);
+  }
   ctx.drawImage(img, 0, slot_cp, 32, 32, 192, 128, 64, 64);
 }
 
