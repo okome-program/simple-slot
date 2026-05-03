@@ -113,10 +113,10 @@ function update() {
     if (slot_bt == 40) {
       slot_bp += 16;
     }else if (slot_bt > 0 && slot_bt < 40) {
-      slot_bp += 8;
+      slot_bp += 4;
       slot_bt--;
     }else if (slot_bt == 0 && slot_bp != slot_bp_math) {
-    	slot_bp += 8;
+    	slot_bp += 4;
     }
     if (slot_bp > 223) {
       slot_bp = 0;
@@ -126,10 +126,10 @@ function update() {
     if (slot_ct == 50) {
       slot_cp += 16;
     }else if (slot_ct > 0 && slot_ct < 60) {
-      slot_cp += 8;
+      slot_cp += 4;
       slot_ct--;
     }else if (slot_ct == 0 && slot_cp != slot_cp_math) {
-      slot_cp += 8;
+      slot_cp += 4;
     }
     if (slot_cp > 223) {
       slot_cp = 0;
