@@ -104,7 +104,7 @@ function update() {
     
     const slot_bp_math = Math.floor(slot_bp / 32) * 32;
     if (slot_bt == 40) {
-      slot_bp += 16;
+      slot_bp += 4;
     }else if (slot_bt > 0 && slot_bt < 40) {
       slot_bp += 8;
       slot_bt--;
