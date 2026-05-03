@@ -122,7 +122,7 @@ function update() {
     
     const slot_cp_math = Math.floor(slot_cp / 32) * 32;
     if (slot_ct == 50) {
-      slot_cp += 16;
+      slot_cp += 4;
     }else if (slot_ct > 0 && slot_ct < 60) {
       slot_cp += 8;
       slot_ct--;
