@@ -86,7 +86,7 @@ function update() {
   if (btn_p < 5 && btn_p > 0) {
     const slot_ap_math = Math.floor(slot_ap / 32) * 32;
     if (slot_at == 40) {
-      slot_ap += 16;
+      slot_ap += 4;
 		}else if (slot_at > 0 && slot_at < 40) {
       slot_ap += 8;
       slot_at--;
