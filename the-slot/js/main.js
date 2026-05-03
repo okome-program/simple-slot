@@ -98,7 +98,7 @@ function update() {
   if (btn_p < 5 && btn_p > 0) {
     const slot_ap_math = Math.floor(slot_ap / 32) * 32;
     if (slot_at == 40) {
-      slot_ap += 4;
+      slot_ap += 16;
 		}else if (slot_at > 0 && slot_at < 40) {
       slot_ap += 8;
       slot_at--;
@@ -111,7 +111,7 @@ function update() {
     
     const slot_bp_math = Math.floor(slot_bp / 32) * 32;
     if (slot_bt == 40) {
-      slot_bp += 4;
+      slot_bp += 16;
     }else if (slot_bt > 0 && slot_bt < 40) {
       slot_bp += 8;
       slot_bt--;
@@ -124,7 +124,7 @@ function update() {
     
     const slot_cp_math = Math.floor(slot_cp / 32) * 32;
     if (slot_ct == 50) {
-      slot_cp += 4;
+      slot_cp += 16;
     }else if (slot_ct > 0 && slot_ct < 60) {
       slot_cp += 8;
       slot_ct--;
